@@ -15,6 +15,6 @@ def chickenpox_by_sex():
     xxm = xm[xm["HAD_CPOX"]==1]
     ym = male[male["P_NUMVRC"]>0]
     yym = ym[ym["HAD_CPOX"]==0]
-    dict = { "male" : len(xxm.index)/len(yym.index),
+    dict1 = { "male" : len(xxm.index)/len(yym.index),
              "female" : len(xxf.index)/len(yyf.index) }
-    return dict
+    return dict1
